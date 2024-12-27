@@ -55,8 +55,18 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+        textShadow: {
+            sm: '1px 1px 2px rgba(0, 0, 0, 0.75)',
+            md: '2px 2px 4px rgba(0, 0, 0, 0.75)',
+            lg: '3px 3px 6px rgba(0, 0, 0, 0.75)',
+            wt: '3px 3px 6px rgba(255, 255, 255, 0.75)',
+        },
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"), // Plugin untuk animasi
+    require("tailwindcss-textshadow"), // Plugin untuk text shadow
+    require("@xpd/tailwind-3dtransforms")
+  ],
 } satisfies Config;

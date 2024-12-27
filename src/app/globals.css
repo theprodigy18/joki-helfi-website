@@ -83,3 +83,8 @@
 {
     background-color: white !important;
 }
+
+.rotate-y
+{
+    transform: rotateY(45deg);
+}
